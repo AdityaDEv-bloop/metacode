@@ -1,0 +1,469 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    {% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>MCS - Meta Code Solution</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/images/favicon-16x16.png' %}">
+    <!-- CSS
+	============================================ -->
+
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" type="text/css"  href="{% static 'assets/css/plugins/all.min.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'assets/css/plugins/flaticon.css' %}">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" type="text/css"  href="{% static 'assets/css/plugins/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'assets/css/plugins/swiper-bundle.min.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'assets/css/plugins/aos.css' %}">
+    <link rel="stylesheet" type="text/css"  href="{% static 'assets/css/plugins/magnific-popup.css' %}">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+
+        <!-- Preloader start -->
+        <div id="preloader">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- Preloader End -->
+
+        <!-- Header Start  -->
+        <div id="header" class="section header-section header-section-04">
+
+            <div class="container">
+
+                <!-- Header Wrap Start  -->
+                <div class="header-wrap">
+
+                    <div class="header-logo">
+                        <a class="logo-black" href="{% url 'index' %}"><img src="{% static 'assets/images/metalogo-black.png' %}" alt=""></a>
+                        <a class="logo-white" href="{% url 'index' %}"><img src="{% static 'assets/images/metalogo_png.png' %}" alt=""></a>
+                    </div>
+
+                    <div class="header-menu d-none d-lg-block">
+                        <ul class="main-menu">
+                            <li>
+                                <a href="{% url 'index' %}">Home</a>
+                                <!-- <ul class="sub-menu">
+                                    <li><a href="{% url 'index' %}">Home Main</a></li>
+                                    <li><a href="index-2.html">AI Solutions</a></li>
+                                    <li><a href="index-3.html">Cyber Security</a></li>
+                                    <li class="active"><a href="index-4.html">IT Solutions</a></li>
+                                    <li><a href="index-5.html">Software Company</a></li>
+                                    <li><a href="index-6.html">IT Agency</a></li>
+                                </ul> -->
+                            </li>
+                            <li>
+                                <a href="{% url 'about' %}">About Us</a>
+                            </li>
+                            <!-- <li><a href="#">Pages</a>
+                                <ul class="sub-menu">
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="{% url 'contact' %}">Service</a></li>
+                                    <li><a href="choose-us.html">Why Choose Us</a></li>
+                                    <li><a href="testimonial.html">Testimonial</a></li>
+                                    <li><a href="pricing.html">Pricing</a></li>
+                                    <li><a href="login-register.html">Login & Register</a></li>
+                                </ul>
+                            </li> -->
+                            <!-- <li><a href="#">Blog</a> -->
+                                <!-- <ul class="sub-menu">
+                                    <li><a href="blog.html">Blog Grid</a></li>
+                                    <li><a href="blog-standard.html">Blog List</a></li>
+                                    <li><a href="blog-details.html">Blog Single</a></li>
+                                </ul> -->
+                            <!-- </li> -->
+                            <li class="active-menu">
+                                <a href="{% url 'contact'%}">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!-- Header Wrap End  -->
+
+            </div>
+        </div>
+        <!-- Header End -->
+
+        <!-- Offcanvas Start-->
+        <div class="offcanvas offcanvas-start" id="offcanvasExample">
+            <div class="offcanvas-header">
+                <!-- Offcanvas Logo Start -->
+                <div class="offcanvas-logo">
+                    <a href="{% url 'index' %}"><img src="{% static 'assets/images/logo-white.png' %}" alt=""></a>
+                </div>
+                <!-- Offcanvas Logo End -->
+                <button type="button" class="close-btn" data-bs-dismiss="offcanvas"><i class="flaticon-close"></i></button>
+            </div>
+
+            <!-- Offcanvas Body Start -->
+            <div class="offcanvas-body">
+                <div class="offcanvas-menu">
+                    <ul class="main-menu">
+                        <li class="active-menu">
+                            <a href="{% url 'index' %}">Home</a>
+                            <!-- <ul class="sub-menu">
+                                <li><a href="{% url 'index' %}">Home Main</a></li>
+                                <li><a href="index-2.html">AI Solutions</a></li>
+                                <li><a href="index-3.html">Cyber Security</a></li>
+                                <li class="active"><a href="index-4.html">IT Solutions</a></li>
+                                <li><a href="index-5.html">Software Company</a></li>
+                                <li><a href="index-6.html">IT Agency</a></li>
+                            </ul> -->
+                        </li>
+                        <li>
+                            <a href="{% url 'about' %}">Aboute Us</a>
+                        </li>
+                        <!-- <li><a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="{% url 'contact' %}">Service</a></li>
+                                <li><a href="choose-us.html">Why Choose Us</a></li>
+                                <li><a href="testimonial.html">Testimonial</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="login-register.html">Login & Register</a></li>
+                            </ul>
+                        </li> -->
+                        <!-- <li><a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog Grid</a></li>
+                                <li><a href="blog-standard.html">Blog List</a></li>
+                                    <li><a href="blog-details.html">Blog Single</a></li>
+                            </ul>
+                        </li> -->
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Offcanvas Body End -->
+        </div>
+        <!-- Offcanvas End -->
+             <!-- Hero Start -->
+             <div class="section techwix-hero-section-04 d-flex align-items-center" style="background-image: url(static/assets/images/main_banner.png);">
+                <img class="shape-1" src="{% static 'assets/images/shape/hero4-shape1.png' %}" alt="">
+                <img class="shape-2" src="{% static 'assets/images/shape/hero4-shape2.png' %}" alt="">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <!-- Hero Content Start -->
+                            <div class="hero-content text-center">
+                                <h2 class="title" data-aos="fade-up" data-aos-delay="800">Contact</h2>
+                                <p data-aos="fade-up" data-aos-delay="900">We provide the most responsive and functional IT design for companies and businesses worldwide.</p>
+                                <div class="hero-btn" data-aos="fade-up" data-aos-delay="1000">
+                                    <a class="btn" href="{% url 'about'  %}">Read More</a>
+                                </div>
+                            </div>
+                            <!-- Hero Content End -->
+                        </div>
+                    </div>
+                </div>
+                <div class="shape-svg">
+                    <svg id="svg" viewbox="0, 0, 400,27.708333333333336">
+                        <g id="svgg">
+                            <path id="path0" d="M0.000 13.854 L 0.000 27.708 200.000 27.708 L 400.000 27.708 400.000 14.216 L 400.000 0.725 395.573 1.822 C 322.012 20.064,241.242 29.243,178.709 26.467 C 123.876 24.033,57.451 14.315,4.123 0.926 C 2.094 0.417,0.336 0.000,0.217 0.000 C 0.069 0.000,0.000 4.399,0.000 13.854"></path>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <!-- Hero End -->
+
+              <!-- Contact Info Start -->
+              <div class="section contact-info-section section-padding-02">
+                <div class="container">
+                    <!-- Contact Info Wrap Start -->
+                    <div class="contact-info-wrap">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6">
+                                <!--Single Contact Info Start -->
+                                <div class="single-contact-info text-center">
+                                    <div class="info-icon">
+                                        <img src="{% static 'assets/images/info-1.png' %}" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <h5 class="title">Give us a call</h5>
+                                        <p>(+91) 6290-873-065</p>
+                                        <p>(+91) 9123-053-936</p>
+                                    </div>
+                                </div>
+                                <!--Single Contact Info End -->
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <!--Single Contact Info Start -->
+                                <div class="single-contact-info text-center">
+                                    <div class="info-icon">
+                                        <img src="{% static 'assets/images/info-2.png' %}" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <h5 class="title">Drop us a line</h5>
+                                        <p>info@metacodesolution.com</p>
+                                        <p>contact@metacodesolution.com</p>
+                                    </div>
+                                </div>
+                                <!--Single Contact Info End -->
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
+                                <!--Single Contact Info Start -->
+                                <div class="single-contact-info text-center">
+                                    <div class="info-icon">
+                                        <img src="{% static 'assets/images/info-3.png'%}" alt="">
+                                    </div>
+                                    <div class="info-content">
+                                        <h5 class="title">Visit our office</h5>
+                                        <p>K2-Tower, Saltlake City, Kolkata - 700089</p>
+                                    </div>
+                                </div>
+                                <!--Single Contact Info End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Info Wrap End -->
+                </div>
+            </div>
+            <!-- Contact Info End -->
+    
+            <!-- Contact Start -->
+            <div class="section techwix-contact-section techwix-contact-section-02 techwix-contact-section-03 section-padding-02">
+                <div class="container">
+                    <!-- Contact Wrap Start -->
+                    <div class="contact-wrap">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10">
+                                <!-- Contact Form Start -->
+                                <div class="contact-form">
+                                    <div class="contact-form-wrap">
+                                        <div class="heading-wrap text-center">
+                                            <span class="sub-title"> request a quote</span>
+                                            <h3 class="title">How May We Help You!</h3>
+                                        </div>
+                                        <form action="#">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <!-- Single Form Start -->
+                                                    <div class="single-form">
+                                                        <input type="text" placeholder="Name *">
+                                                    </div>
+                                                    <!-- Single Form End -->
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <!-- Single Form Start -->
+                                                    <div class="single-form">
+                                                        <input type="email" placeholder="Email *">
+                                                    </div>
+                                                    <!-- Single Form End -->
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <!-- Single Form Start -->
+                                                    <div class="single-form">
+                                                        <input type="text" placeholder="Subject *">
+                                                    </div>
+                                                    <!-- Single Form End -->
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <!-- Single Form Start -->
+                                                    <div class="single-form">
+                                                        <textarea placeholder="Write A Message"></textarea>
+                                                    </div>
+                                                    <!-- Single Form End -->
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <!--  Single Form Start -->
+                                                    <div class="form-btn">
+                                                        <button class="btn" type="submit">Send Message</button>
+                                                    </div>
+                                                    <!--  Single Form End -->
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Contact Form End -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Wrap End -->
+                </div>
+            </div>
+            <!-- Contact End -->
+    
+            <!-- Contact Map Start -->
+            <div class="section contact-map-section">
+                <div class="contact-map-wrap">
+                    <iframe scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=New%20York%20University%20&t=m&z=10&output=embed&iwloc=near" title="New York University" aria-label="New York University" frameborder="0"></iframe>
+                </div>
+            </div>
+            <!-- Contact Map End -->
+
+       <!-- Footer Section Start -->
+       <div class="section footer-section footer-section-03" style="background-image: url(assets/images/bg/footer-bg.jpg);">
+
+        <div class="container">
+            <!-- Footer Widget Wrap Start -->
+            <div class="footer-widget-wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget-about">
+                            <a class="footer-logo" href="{% url 'index' %}"><img src="{% static 'assets/images/metalogo_png.png' %}" alt="Logo"></a>
+                            <p>Meta Code Solution is a dynamic software development company comprising a team of highly skilled and technically sound individuals</p>
+                            <div class="footer-social">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Useful Links</h4>
+
+                            <div class="widget-link">
+                                <ul class="link">
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">About Company</a></li>
+                                    <!-- <li><a href="#">Payment Gatway</a></li> -->
+                                    <li><a href="#">Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Our Services</h4>
+
+                            <div class="widget-link">
+                                <ul class="link">
+                                    <li><a href="{% url 'index' %}">Web Development</a></li>
+                                    <li><a href="{% url 'index' %}">Mobile Development</a></li>
+                                    <!-- <li><a href="#">Game Development</a></li> -->
+                                    <li><a href="{% url 'index' %}">Data Service</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- Footer Widget Start -->
+                        <div class="footer-widget">
+                            <h4 class="footer-widget-title">Contact Information</h4>
+
+                            <div class="widget-info">
+                                <ul>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="flaticon-phone-call"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span><a href="#">+91 6290 873 065</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="far fa-envelope-open"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span><a href="#">contact@metacodesolution.com</a></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="info-icon">
+                                            <i class="flaticon-pin"></i>
+                                        </div>
+                                        <div class="info-text">
+                                            <span>K2-Tower, Saltlake City, Kolkata - 700089</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Footer Widget End -->
+                    </div>
+                </div>
+            </div>
+            <!-- Footer Widget Wrap End -->
+        </div>
+
+        <!-- Footer Copyright Start -->
+        <div class="footer-copyright-area">
+            <div class="container">
+                <div class="footer-copyright-wrap">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <!-- Footer Copyright Text Start -->
+                            <div class="copyright-text text-center">
+                                <p>© Copyrights 2024 Meta Code Solution All rights reserved.</p>
+                            </div>
+                            <!-- Footer Copyright Text End -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Copyright End -->
+    </div>
+    <!-- Footer Section End -->
+
+        <!-- back to top start -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- back to top end -->
+
+    </div>
+
+    <!-- JS
+    ============================================ -->
+    <script src="{% static 'assets/js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'assets/js/vendor/modernizr-3.11.2.min.js' %}"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="{% static 'assets/js/plugins/popper.min.js' %}"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="{% static 'assets/js/plugins/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/aos.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/back-to-top.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/appear.min.js' %}"></script>
+    <script src="{% static 'assets/js/plugins/jquery.magnific-popup.min.js' %}"></script>
+
+
+    <!--====== Use the minified version files listed below for better performance and remove the files listed above ======-->
+
+
+    <!-- Main JS -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
