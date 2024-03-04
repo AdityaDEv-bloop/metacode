@@ -79,7 +79,7 @@
                             <!-- <li><a href="#">Pages</a>
                                 <ul class="sub-menu">
                                     <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="service.html">Service</a></li>
+                                    <li><a href="{% url 'contact' %}">Service</a></li>
                                     <li><a href="choose-us.html">Why Choose Us</a></li>
                                     <li><a href="testimonial.html">Testimonial</a></li>
                                     <li><a href="pricing.html">Pricing</a></li>
@@ -93,7 +93,7 @@
                                     <li><a href="blog-details.html">Blog Single</a></li>
                                 </ul> -->
                             <!-- </li> -->
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
 
@@ -136,7 +136,7 @@
                         <!-- <li><a href="#">Pages</a>
                             <ul class="sub-menu">
                                 <li><a href="team.html">Our Team</a></li>
-                                <li><a href="service.html">Service</a></li>
+                                <li><a href="{% url 'contact' %}">Service</a></li>
                                 <li><a href="choose-us.html">Why Choose Us</a></li>
                                 <li><a href="testimonial.html">Testimonial</a></li>
                                 <li><a href="pricing.html">Pricing</a></li>
@@ -150,7 +150,7 @@
                                     <li><a href="blog-details.html">Blog Single</a></li>
                             </ul> -->
                         <!-- </li> -->
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="{% url 'contact'  %}">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -278,10 +278,10 @@
                                 <!-- Service Item Start -->
                                 <div class="service-item-03">
                                     <div class="service-img">
-                                        <a href="service.html"><img src="{% static 'assets/images/webapp-ser.jpg' %}" alt=""></a>
+                                        <a href="{% url 'contact' %}"><img src="{% static 'assets/images/webapp-ser.jpg' %}" alt=""></a>
                                     </div>
                                     <div class="service-text">
-                                        <h3 class="title"><a href="service.html">Information managemnet sytem</a></h3>
+                                        <h3 class="title"><a href="{% url 'contact' %}">Information managemnet sytem</a></h3>
                                     </div>
                                 </div>
                                 <!-- Service Item End -->
@@ -290,10 +290,10 @@
                                 <!-- Service Item Start -->
                                 <div class="service-item-03">
                                     <div class="service-img">
-                                        <a href="service.html"><img src="{% static 'assets/images/mobileapp-ser.jpg' %}" alt=""></a>
+                                        <a href="{% url 'contact' %}"><img src="{% static 'assets/images/mobileapp-ser.jpg' %}" alt=""></a>
                                     </div>
                                     <div class="service-text">
-                                        <h3 class="title"><a href="service.html">Multifunctional Technology</a></h3>
+                                        <h3 class="title"><a href="{% url 'contact' %}">Multifunctional Technology</a></h3>
                                     </div>
                                 </div>
                                 <!-- Service Item End -->
@@ -302,10 +302,10 @@
                                 <!-- Service Item Start -->
                                 <div class="service-item-03">
                                     <div class="service-img">
-                                        <a href="service.html"><img src="{% static 'assets/images/game-ser.jpg' %}" alt=""></a>
+                                        <a href="{% url 'contact' %}"><img src="{% static 'assets/images/game-ser.jpg' %}" alt=""></a>
                                     </div>
                                     <div class="service-text">
-                                        <h3 class="title"><a href="service.html">Information Database Security</a></h3>
+                                        <h3 class="title"><a href="{% url 'contact' %}">Information Database Security</a></h3>
                                     </div>
                                 </div>
                                 <!-- Service Item End -->
@@ -343,7 +343,7 @@
                                 <!-- Author Skill Wrap Start -->
                                 <div class="author-skill-wrap">
                                     <div class="author-wrap">
-                                        <img src="{% static 'assets/images/sign.png' %}" alt="">
+                                        <img src="{% static 'assets/images/sign_1.png' %}" alt="">
                                         <h3 class="name">Payel Sarkar</h3>
                                         <span class="designation">CEO, MCS</span>
                                     </div>
@@ -394,7 +394,7 @@
                                             </div>
                                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent for all your software.
+                                                    MCS with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent for all your software.
                                                 </div>
                                             </div>
                                         </div>
@@ -418,7 +418,7 @@
                                             </div>
                                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                                 <div class="accordion-body">
-                                                    Accelerate innovation with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent for all your software.
+                                                    MCS with world-class tech teams We’ll match you to an entire remote team of incredible freelance talent for all your software.
                                                 </div>
                                             </div>
                                         </div>
@@ -471,7 +471,7 @@
                                         </div>
                                         <div class="testimonial-content">
                                             <img src="{% static 'assets/images/testi-icon.png' %}" alt="">
-                                            <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
+                                            <p>MCS with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                             <span class="name">Payel Sarkar </span>
                                             <span class="designation"> / CEO, MCS</span>
                                         </div>
@@ -486,7 +486,7 @@
                                         </div>
                                         <div class="testimonial-content">
                                             <img src="{% static 'assets/images/testi-icon.png' %}" alt="">
-                                            <p>Accelerate innovation with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
+                                            <p>MCS with world-class tech teams Beyond more stoic this along goodness hey this this wow manatee </p>
                                             <span class="name">Payel Sarkar </span>
                                             <span class="designation"> / CEO, MCS</span>
                                         </div>
